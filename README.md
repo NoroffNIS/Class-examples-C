@@ -1,14 +1,14 @@
 #Assigments
 
-#### Repository structure:
+#### :open_file_folder: Repository structure:
 -	Assignments – Username
-  -	[Assignment 1](Assignment_1) :open_file_folder:
-    -	[src](Assignment_1/src) :file_folder:
-    -	bin :file_folder:
+  -	[Assignment 1](Assignment_1)
+    -	[src](Assignment_1/src)
+    -	bin
     -	[README.md](Assignment_1/README.md)
-  -	[Assignment 2](Assignment_2) :open_file_folder:
-    -	[src](Assignment_2/src) :file_folder:
-    -	bin :file_folder:
+  -	[Assignment 2](Assignment_2)
+    -	[src](Assignment_2/src)
+    -	bin
     -	[README.md](Assignment_2/README.md)
 -	[README.md](README.md)
 -	.gitignore
