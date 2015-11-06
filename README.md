@@ -14,6 +14,7 @@
 -	.gitignore
 -	.gitattributes
 
+New assignments should hold the same structure as the assignments above.
 
 ### Remember this!
 All new .c files should include this heading:
