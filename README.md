@@ -14,10 +14,10 @@
 -	.gitignore
 -	.gitattributes
 
-New assignments should hold the same structure as the assignments above.
-*src* is the folder containing your code files.
-*bin* is the folder for your compiled files, but the compiled files should not be uploaded.
-After you have pulled your repository the fist time you need to go in to the [.gitignore](.gitignore) and remove the # before bin/ (line 8).
+New assignments should hold the same structure as the assignments above.\n
+*src* is the folder containing your code files. \n
+*bin* is the folder for your compiled files, but the compiled files should not be uploaded.\n
+After you have pulled your repository the fist time you need to go in to the [.gitignore](.gitignore) and remove the # before bin/ (line 8).\n
 The *README.md* is a file where your write a short explanation of what your program do.
 
 ### Remember this!
