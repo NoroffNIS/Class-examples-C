@@ -17,7 +17,7 @@
 New assignments should hold the same structure as the assignments above.
 ***src*** is the folder containing your code files.
 ***bin*** is the folder for your compiled files, but the compiled files should not be uploaded.
-After you have pulled your repository the fist time you need to create a bin folder as shown above in the structure.
+After you have pulled your repository the first time you need to create a ***bin*** folder as shown above in the structure.
 The ***README.md*** is a file where your write a short explanation of what your program does.
 
 #### :heavy_exclamation_mark: Remember this :heavy_exclamation_mark:
