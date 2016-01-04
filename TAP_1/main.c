@@ -3,6 +3,6 @@
 
 int main()
 {
-    printf("Hello Students!\n");
+    printf("Hello Web-Students!\n");
     return 0;
 }
