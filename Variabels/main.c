@@ -7,16 +7,15 @@
 
 int main()
 {
-    char first_array[4], second_array[4];
-    printf("Type some letters:\n");
-    scanf("%s", &first_array);
+    int a=4;
+    int b=5;
+    double sum;
 
-    printf("Type some letters:\n");
-    scanf("%s", &second_array);
+    sum=a+b;
+    printf("Add: %d + %d = %1.2f \n", a, b, sum);
 
-    printf("This is what you typed: %s\n", first_array);
-    printf("This is what you typed: %s\n", second_array);
-
+    sum = (double) a/b;
+    printf("Sub: %d / %d = %1.2f \n", a, b, sum);
    return 0;
 
 }
