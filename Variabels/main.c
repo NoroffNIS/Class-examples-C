@@ -1,23 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <limits.h>
+#include <float.h>
 
 #define PI 3.14159265359
 /*265359*/
 
 int main()
 {
-    int a=4;
-    int b=5;
-    double sum;
 
-    sum=a+b;
-    printf("Add: %d + %d = %1.2f \n", a, b, sum);
 
-    sum = (double) a/b;
-    printf("Sub: %d / %d = %1.2f \n", a, b, sum);
-   return 0;
 
+    return 0;
 }
 
 
@@ -54,5 +49,35 @@ int main()
     printf("%f",a);
 
 
+    char a='a';
+    char b='b';
+    int sum;
+
+    sum=a+b;
+    printf("ASCII num: %d + %d = %d \n", a, b, sum);
+
+    printf("Char: %c + %c = %c \n", a, b, sum);
+
+  ** Numeric sizes **
+   printf("The number of bits in a byte %d\n", CHAR_BIT);
+
+   printf("The minimum value of SIGNED CHAR = %d\n", SCHAR_MIN);
+   printf("The maximum value of SIGNED CHAR = %d\n", SCHAR_MAX);
+   printf("The maximum value of UNSIGNED CHAR = %d\n", UCHAR_MAX);
+
+   printf("The minimum value of SHORT INT = %d\n", SHRT_MIN);
+   printf("The maximum value of SHORT INT = %d\n", SHRT_MAX);
+
+   printf("The minimum value of DOUBLE = %e\n", DBL_MIN);
+   printf("The maximum value of DOUBLE = %e\n", DBL_MAX);
+
+   printf("The minimum value of CHAR = %d\n", CHAR_MIN);
+   printf("The maximum value of CHAR = %d\n", CHAR_MAX);
+
+   printf("The minimum value of LONG = %ld\n", LONG_MIN);
+   printf("The maximum value of LONG = %ld\n", LONG_MAX);
+
+   printf("The minimum value of INT = %d\n", INT_MIN);
+   printf("The maximum value of INT = %d\n", INT_MAX);
 
 */

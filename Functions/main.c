@@ -1,5 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void draw_roof(void);
+void draw_floor(void);
+void draw_basement(void);
+
+int main()
+{
+    printf("My House\n");
+    //Roof
+    printf("   # \n");
+    printf("  / \\ \n");
+    printf(" /   \\ \n");
+    printf("/     \\ \n");
+    //Floor
+    printf("******* \n");
+    printf("*|| ||* \n");
+    printf("*     * \n");
+    printf("* | | * \n");
+    //Basement
+    printf("******* \n");
+    printf("* * * * \n");
+    printf("******* \n");
+
+  return 0;
+}
+
+void draw_floor(){
+
+}
+void draw_basement(){
+
+    }
+
 /*
-*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
