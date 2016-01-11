@@ -3,6 +3,10 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    char var = 'A';
+    printf("%d", var);
+
+
+
     return 0;
 }

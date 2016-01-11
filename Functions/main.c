@@ -1,37 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void draw_roof(void);
-void draw_floor(void);
-void draw_basement(void);
+double multiply(double a, double b);
+double divide(double a, double b);
 
 int main()
 {
-    printf("My House\n");
-    //Roof
-    printf("   # \n");
-    printf("  / \\ \n");
-    printf(" /   \\ \n");
-    printf("/     \\ \n");
-    //Floor
-    printf("******* \n");
-    printf("*|| ||* \n");
-    printf("*     * \n");
-    printf("* | | * \n");
-    //Basement
-    printf("******* \n");
-    printf("* * * * \n");
-    printf("******* \n");
+    char buffer[50];
+    double num_1, num_2;
+
+    printf("Type numbers>\n");
+    fgets(buffer, sizeof(buffer), stdin);
+    num_1 = atof(buffer);
+
+    fgets(buffer, sizeof(buffer), stdin);
+    num_2 = atof(buffer);
+
+    double results = multiply(num_1, num_2);
+    printf("Result is: %f", results);
 
   return 0;
 }
 
-void draw_floor(){
-
+double multiply(double x, double y){
+    double result=x*y;
+    return result;
 }
-void draw_basement(){
 
-    }
+double divide(double x, double y){
+    double result=x/y;
+    return result;
+}
+
 
 /*
 

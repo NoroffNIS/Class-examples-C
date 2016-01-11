@@ -10,7 +10,14 @@
 int main()
 {
 
+    char buffer1[4];
+    char buffer2[4];
 
+    printf("Print in some letters>\n");
+    scanf("%s", buffer1);
+    scanf("%s", buffer2);
+    printf("\n%s",buffer1);
+    printf("\n%s",buffer2);
 
     return 0;
 }
@@ -30,6 +37,9 @@ int main()
     printf("Equals %f \n", sum);
 
     **Char array memory overflow:**
+    |0|1|2|3|4|5 |
+    |h|e|l|l|o|\n|
+
     char input_number1[2], input_number2[2];
     scanf(" %s", &input_number1);
     scanf(" %s", &input_number2);
