@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1452688177 source:c:\users\elev\desktop\prg\code\tap-1-rbrage\goto_randomnumber\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

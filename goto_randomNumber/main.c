@@ -10,8 +10,11 @@ int main()
 {
     char answer;
     START:
-    srand(time(NULL));
-    int random_number = (rand() % upper_limit + lower_limit);
+    srand(time(NULL)); //Uses the time to generate random number
+    int random = rand();
+    int random_number = (random % upper_limit + lower_limit); // Assign a random number with lower and upper limits.
+
+    printf("rand() = %d\n %% %d upper limit\n = %d \n + %d lower limit\n\n", random, upper_limit,random%upper_limit, lower_limit);
     printf("\nYour random number is: %d\n", random_number);
     printf("Type in Y to continue, or N quite>");
     scanf(" %c", &answer);
