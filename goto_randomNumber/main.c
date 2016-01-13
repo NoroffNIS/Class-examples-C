@@ -2,16 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-void endfunction(void);
+#define upper_limit 100
+#define lower_limit 0
+
 
 int main()
 {
     char answer;
-
-START:
+    START:
+    srand(time(NULL));
+    int random_number = (rand() % upper_limit + lower_limit);
+    printf("\nYour random number is: %d\n", random_number);
     printf("Type in Y to continue, or N quite>");
     scanf(" %c", &answer);
-
     switch(answer)
     {
     case 'y':
@@ -22,32 +25,11 @@ START:
     case 'n':
     case 'N':
         printf("\nYou typed N for no!\n");
-        goto end;
         break;
     default:
         printf("\nYou need to type Y or N!");
         goto START;
     }
-    end:
-        printf("\nEnd in same function!");
+
     return 0;
 }
-
-
-/*
-    srand(time(NULL));
-    int rand_num = rand() % 100 + 0;
-
-    switch(rand_num%2)
-    {
-    case 0:
-        printf("The number %d is even.\n", rand_num);
-        break;
-    case 1:
-        printf("The Number %d is odd.\n", rand_num);
-        break;
-    default:
-        printf("There was some error in your switch statement.");
-    }
-    printf("switch ended!");
-*/
