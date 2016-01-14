@@ -8,8 +8,10 @@
 	<stdlib.h>
 	<math.h>
 
-1452076112 source:c:\users\elev\desktop\prg\code\tap-1-rbrage\variabels\main.c
+1452761593 source:c:\users\elev\desktop\prg\code\tap-1-rbrage\variabels\main.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
+	<limits.h>
+	<float.h>
 
