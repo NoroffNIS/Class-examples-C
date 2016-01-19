@@ -4,7 +4,25 @@
 int main()
 {
 
-    int count = 1;
+    char answer = 'y';
+    while(answer == 'y'){
+    printf("Type y to loop!>");
+    scanf(" %c", &answer);
+    }
+    printf("\nExit loop!");
+
+    return 0;
+}
+/*
+nt count = 0;
+
+    while(count <= 50){
+
+    printf("count: %d -- count2: %1.f\n",count, pow(2,count));
+    count = count + 1;
+
+
+int count = 1;
     int input_number;
     printf("Type in a number !>");
     scanf("%d", &input_number);
@@ -19,9 +37,5 @@ int main()
     printf("%d\n",count);
     count = count * 2 ;
     }
-
-    return 0;
-}
-/*
 
     */
