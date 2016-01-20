@@ -1,13 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define DEBUG 1
+
 int main()
 {
 
     char answer = 'y';
     while(answer == 'y'){
     printf("Type y to loop!>");
-    scanf(" %c", &answer);
+      scanf(" %c", &answer);
+      if(DEBUG)
+        printf("****DEBUG: This is scanned: %c\n", answer);
     }
     printf("\nExit loop!");
 
