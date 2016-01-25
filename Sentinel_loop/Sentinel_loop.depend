@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1453712685 source:c:\users\elev\desktop\prg\code\tap-1-rbrage\sentinel_loop\main.c
+	<stdio.h>
+	<stdlib.h>
+
