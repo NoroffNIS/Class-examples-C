@@ -5,6 +5,25 @@
 
 int main()
 {
+    int sum=0, score;
+    printf("Type in a score or %d to quit.", SENTINEL);
+    scanf("%d", &score);
+
+    while(score != SENTINEL){
+            sum += score;
+            printf("\nType in another score>");
+            scanf("%d", &score);
+    }
+
+    printf("Sum of the score is: %d", sum);
+
+
+    return 0;
+}
+
+
+/*
+    #define SENTINEL -99
 
     int sum=0, score;
     printf("Type in a score, or %d to quit>", SENTINEL);
@@ -14,5 +33,17 @@ int main()
     }
     printf("You sum of score is %d", sum);
 
-    return 0;
-}
+    int sum=0, score;
+    printf("Type in a score or %d to quit.", SENTINEL);
+    scanf("%d", &score);
+
+    while(score != SENTINEL){
+            sum += score;
+            printf("\nType in another score>");
+            scanf("%d", &score);
+    }
+
+    printf("Sum of the score is: %d", sum);
+
+
+    */
