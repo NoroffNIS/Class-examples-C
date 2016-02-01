@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1454333023 source:c:\users\elev\desktop\prg\code\tap-1-rbrage\arrays_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

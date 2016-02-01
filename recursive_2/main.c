@@ -19,6 +19,7 @@ int main()
     return 0;
 }
 int count = 0;
+
 int count_letters(char ch, char *string){
     int number;
     printf("count: %d | string: %s\n",count, string);
