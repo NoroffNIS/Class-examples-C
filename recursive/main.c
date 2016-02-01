@@ -3,14 +3,30 @@
 
 
 int multiply(int m, int n);
-int count_char(char ch, const char *string);
-void reverse_input_words(int n);
-int gcd(int m, int n);
+
 
 int main()
 {
 
-    //printf("Multiply 6 by 3 = %d\n", multiply(6,3));
+    printf("Multiply 5 by 6 = %d",multiply(5, 6));
+
+}
+int multiply(int m, int n){
+    int ans;
+    printf("Before: M=%d N=%d ans=%d\n",m,n, ans);
+
+    if(n == 1){
+        ans = m;
+    }else{
+        ans = m + multiply(m, n-1);
+    }
+    printf("After: M=%d N=%d ans=%d\n",m,n, ans);
+    return ans;
+}
+
+
+
+/* //printf("Multiply 6 by 3 = %d\n", multiply(6,3));
     //printf("The number of %c in %s is %d.\n",'s',"Mississippi sassafras", count_char('s', "Mississippi sassafras"));
 
     //reverse_input_words(3);
@@ -18,9 +34,7 @@ int main()
     printf("372 gcd 63 = %d\n", gcd(372, 63));
     printf("372/%d = %d\n", gcd(372, 63), 371/gcd(372, 63));
     printf("63/%d = %d\n", gcd(372, 63), 63/gcd(372, 63));
-    return 0;
-}
-
+    return 0;*/
 int gcd(int m, int n){
     int ans;
     printf("m: %d | n:%d\n", m, n);
@@ -68,7 +82,7 @@ int count_char(char ch, const char *string){
     return ans;
 }
 
-int multiply(int m, int n){
+/*int multiply(int m, int n){
     int ans;
 
     printf("Calling: M:%d N:%d ans:%d\n", m, n, ans);
@@ -79,9 +93,14 @@ int multiply(int m, int n){
     printf("Returning: M:%d N:%d ans:%d\n", m, n, ans);
     return ans;
 
-}
+}*/
+/*
 
-/*printf("Result of 6 * 3 = %d\n", multiply(6,3));
+int count_char(char ch, const char *string);
+void reverse_input_words(int n);
+int gcd(int m, int n);
+
+printf("Result of 6 * 3 = %d\n", multiply(6,3));
     printf("The number of %c in %s is %d.\n",'s',"Mississippi sassafras", count_char('s', "Mississippi sassafras"));
     printf("You going to type inn 3 words now!\n");
     reverse_input_words(3);
