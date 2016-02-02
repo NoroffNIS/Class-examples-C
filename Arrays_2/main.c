@@ -15,10 +15,10 @@ int main()
     }
 
     for(i=0; i<SIZE;i++){
-        printf("Array[%d]: %d | factorial:%d! = %d\n", i, array[i],array[i],factorial(array[i]));
+        printf("Array[%d]: %d | factorial:%d! = %d\n"
+               , i, array[i],array[i],factorial(array[i]));
     }
     printf("Sum of array elements: %d", sum);
-
 
     return 0;
 }
