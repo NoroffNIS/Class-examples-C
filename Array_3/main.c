@@ -3,13 +3,95 @@
 #include <time.h>
 
 void do_it(int arg1, int *arg2, int *arg3);
-void array_change(int *array_cp, int size);
-void sort_array_de(int *array, int size);
+void two_do(int *x, int size);
+void order_ac(int *array, int size);
 
 int main()
 {
+    int size = 10, array[size], i;
+    srand(time(NULL));
 
-    int i, size=10, array[size];
+    for(i=0; i<size; i++)
+    {
+        array[i] = rand()%10;
+    }
+    printf("Before:\n");
+    for(i=0; i<size; i++)
+    {
+        printf("Array[%d]:%d\n", i, array[i]);
+    }
+
+    //do_it(array[0],&array[1], &array[2]);
+    //two_do(&array, size);
+
+    order_ac(&array, size);
+
+    int target = 5, result;
+    result = search(&array, size, target);
+    if(result==-1)
+        printf("%d could not be found!\n", target);
+    else
+        printf("%d was located at array element %d\n",target, result);
+
+    printf("After:\n");
+    for(i=0; i<size; i++)
+    {
+        printf("Array[%d]:%d\n", i, array[i]);
+    }
+
+    return 0;
+}
+
+int search(int *array, int size, int target)
+{
+    int i;
+    for(i=0; i<size; i++)
+    {
+        if(array[i]==target)
+            return i;
+        else if(i>=size-1)
+            return -1;
+    }
+
+
+}
+
+void order_ac(int *array, int size)
+{
+    int i, j, temp;
+    for(i=0; i<size; i++)
+    {
+        for(j=i+1; j<size; j++)
+        {
+            if(array[i]>array[j])
+            {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+
+}
+
+void two_do(int *x, int size)
+{
+    int i;
+    for(i=0; i<size; i++)
+    {
+        x[i] = -3;
+    }
+}
+
+void do_it(int arg1, int *arg2, int *arg3)
+{
+    arg1 = -1;
+    *arg2 = -2;
+    *arg3 = -3;
+}
+
+
+/*int i, size=10, array[size];
     srand(time(NULL));
 
     for(i=0;i<size;i++){
@@ -30,8 +112,6 @@ int main()
        printf("[%d]:%d\n",i,array[i]);
     }
 
-    return 0;
-}
 
 void sort_array_de(int *array, int size){
     int i, j, temp;
@@ -67,12 +147,12 @@ int search_array(const int *array, int size, int target){
         } else if (i>=size-1){
             return -1;
         }
-    }*/
+    }
 }
 /*int target = 5;
     int results = search_array(&array, size, target);
     printf("Result of the search:\n There is a %d, in array cell %d.",
-            target, results);*/
+            target, results);
 
 
 void array_change(int array_cp[], int size){
