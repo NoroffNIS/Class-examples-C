@@ -27,7 +27,7 @@ int main()
     order_ac(&array, size);
 
     int target = 5, result;
-    result = search(&array, size, target);
+    result = search(&areturn -1;rray, size, target);
     if(result==-1)
         printf("%d could not be found!\n", target);
     else
