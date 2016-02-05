@@ -26,16 +26,15 @@ int main()
     }
     else
     {
-        do
+        while(read_word(infile1, &input1) != EOF)
         {
             status1 = read_word(infile1, &input1);
-            status2 = read_word(infile2, &input2);
-            printf("File 1: %s\n File 2: %s\n", input1, input2);
-            printf("Status 1: %d\n Status 2: %d\n", status1, status2);
+            printf("File 1: %s\n", input1);
+            printf("Status 1: %d\n ", status1);
             printf("------------------------\n");
 
         }
-        while(status1 != -1 || status2 != -1);
+
 
     }
     fclose(infile1);

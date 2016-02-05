@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1454667795 source:c:\users\elev\desktop\prg\code\tap-1-rbrage\strings\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
