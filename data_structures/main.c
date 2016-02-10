@@ -37,7 +37,6 @@ void push(int item){
             head = tail = node;
     }
     printf("PUSH: %d is added.\n", node->data);
-    //tail->next = node;
     head = node;
 }
 void pop(){
