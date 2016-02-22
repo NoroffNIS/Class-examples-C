@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1455044064 source:d:\noroff\prg\code\class-examples\arguments1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"myMath.h"
+
+1455043908 d:\noroff\prg\code\class-examples\arguments1\mymath.h
+

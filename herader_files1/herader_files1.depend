@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1455043389 source:d:\noroff\prg\code\class-examples\herader_files1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"myMath.h"
+
+1455042162 d:\noroff\prg\code\class-examples\herader_files1\mymath.h
+
