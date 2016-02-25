@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="GameFrame">
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>80,144</pos>
+			<size>328,264</size>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes" />
+	</object>
+</wxsmith>

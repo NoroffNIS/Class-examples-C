@@ -17,9 +17,9 @@ typedef struct
 
 void scan_planet(planet_t *plnp);
 
-void multiply(int x, int y){
+int multiply(int x, int y){
     int sum = x * y;
-    printf("%d * %d = %d\n", x, y, sum);
+    return sum;
 }
 double divide(int x, int y){
     double sum = (double) x / y;

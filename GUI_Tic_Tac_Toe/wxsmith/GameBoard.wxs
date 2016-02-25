@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="GameBoard">
+		<size>712,450</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<pos>48,80</pos>
+			<size>80,72</size>
+			<handler function="OnButtonClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON6" variable="Button6" member="yes">
+			<pos>136,160</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON7" variable="Button7" member="yes">
+			<pos>224,160</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON8" variable="Button8" member="yes">
+			<pos>48,240</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON9" variable="Button9" member="yes">
+			<pos>136,240</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON5" variable="Button5" member="yes">
+			<pos>224,240</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON3" variable="Button3" member="yes">
+			<pos>48,160</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON4" variable="Button4" member="yes">
+			<pos>224,80</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
+			<pos>136,80</pos>
+			<size>80,72</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL" variable="TextCtrl" member="yes">
+			<pos>376,72</pos>
+			<size>264,256</size>
+			<style>wxTE_MULTILINE</style>
+		</object>
+	</object>
+</wxsmith>

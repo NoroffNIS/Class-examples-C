@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="GameFrame">
+		<object class="wxMenuBar" variable="MenuBar1" member="yes" />
+	</object>
+</wxsmith>
