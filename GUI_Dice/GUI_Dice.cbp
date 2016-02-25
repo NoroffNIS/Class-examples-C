@@ -84,10 +84,13 @@
 		<Unit filename="GUI_DiceApp.h" />
 		<Unit filename="GUI_DiceMain.cpp" />
 		<Unit filename="GUI_DiceMain.h" />
+		<Unit filename="GameFrame.cpp" />
+		<Unit filename="GameFrame.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Unit filename="wxsmith/GUI_Diceframe.wxs" />
+		<Unit filename="wxsmith/GameFrame.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />
@@ -96,6 +99,7 @@
 				<gui name="wxWidgets" src="GUI_DiceApp.cpp" main="GUI_DiceFrame" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxFrame wxs="wxsmith/GUI_Diceframe.wxs" src="GUI_DiceMain.cpp" hdr="GUI_DiceMain.h" fwddecl="0" i18n="1" name="GUI_DiceFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/GameFrame.wxs" src="GameFrame.cpp" hdr="GameFrame.h" fwddecl="0" i18n="1" name="GameFrame" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>

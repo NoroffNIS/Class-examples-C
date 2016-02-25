@@ -2,7 +2,6 @@
 #define GAMEBOARD_H
 
 //(*Headers(GameBoard)
-#include <wx/menu.h>
 #include <wx/textctrl.h>
 #include <wx/button.h>
 #include <wx/frame.h>
@@ -18,8 +17,6 @@ class GameBoard: public wxFrame
 		//(*Declarations(GameBoard)
 		wxButton* Button4;
 		wxButton* Button1;
-		wxMenuItem* MenuItem1;
-		wxMenu* Menu1;
 		wxButton* Button2;
 		wxTextCtrl* TextCtrl;
 		wxButton* Button6;
@@ -27,7 +24,6 @@ class GameBoard: public wxFrame
 		wxButton* Button3;
 		wxButton* Button7;
 		wxButton* Button9;
-		wxMenuBar* MenuBar1;
 		wxButton* Button8;
 		//*)
 
@@ -44,7 +40,6 @@ class GameBoard: public wxFrame
 		static const long ID_BUTTON4;
 		static const long ID_BUTTON2;
 		static const long ID_TEXTCTRL;
-		static const long ID_MENUITEM1;
 		//*)
 
 	private:

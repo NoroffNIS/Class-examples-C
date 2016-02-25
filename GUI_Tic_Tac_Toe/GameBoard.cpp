@@ -17,7 +17,6 @@ const long GameBoard::ID_BUTTON3 = wxNewId();
 const long GameBoard::ID_BUTTON4 = wxNewId();
 const long GameBoard::ID_BUTTON2 = wxNewId();
 const long GameBoard::ID_TEXTCTRL = wxNewId();
-const long GameBoard::ID_MENUITEM1 = wxNewId();
 //*)
 
 BEGIN_EVENT_TABLE(GameBoard,wxFrame)
@@ -32,32 +31,17 @@ GameBoard::GameBoard(wxWindow* parent,wxWindowID id,const wxPoint& pos,const wxS
     SetClientSize(wxSize(712,450));
     Move(wxDefaultPosition);
     Button1 = new wxButton(this, ID_BUTTON1, wxEmptyString, wxPoint(48,80), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON1"));
-    Button6 = new wxButton(this, ID_BUTTON6, wxEmptyString, wxPoint(136,80), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON6"));
-    Button7 = new wxButton(this, ID_BUTTON7, wxEmptyString, wxPoint(224,80), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON7"));
-    Button8 = new wxButton(this, ID_BUTTON8, wxEmptyString, wxPoint(48,160), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON8"));
-    Button9 = new wxButton(this, ID_BUTTON9, wxEmptyString, wxPoint(136,160), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON9"));
-    Button5 = new wxButton(this, ID_BUTTON5, wxEmptyString, wxPoint(224,160), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON5"));
-    Button3 = new wxButton(this, ID_BUTTON3, wxEmptyString, wxPoint(48,240), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON3"));
-    Button4 = new wxButton(this, ID_BUTTON4, wxEmptyString, wxPoint(136,240), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON4"));
-    Button2 = new wxButton(this, ID_BUTTON2, wxEmptyString, wxPoint(224,240), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON2"));
+    Button6 = new wxButton(this, ID_BUTTON6, wxEmptyString, wxPoint(136,160), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON6"));
+    Button7 = new wxButton(this, ID_BUTTON7, wxEmptyString, wxPoint(224,160), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON7"));
+    Button8 = new wxButton(this, ID_BUTTON8, wxEmptyString, wxPoint(48,240), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON8"));
+    Button9 = new wxButton(this, ID_BUTTON9, wxEmptyString, wxPoint(136,240), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON9"));
+    Button5 = new wxButton(this, ID_BUTTON5, wxEmptyString, wxPoint(224,240), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON5"));
+    Button3 = new wxButton(this, ID_BUTTON3, wxEmptyString, wxPoint(48,160), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON3"));
+    Button4 = new wxButton(this, ID_BUTTON4, wxEmptyString, wxPoint(224,80), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON4"));
+    Button2 = new wxButton(this, ID_BUTTON2, wxEmptyString, wxPoint(136,80), wxSize(80,72), 0, wxDefaultValidator, _T("ID_BUTTON2"));
     TextCtrl = new wxTextCtrl(this, ID_TEXTCTRL, wxEmptyString, wxPoint(376,72), wxSize(264,256), wxTE_MULTILINE, wxDefaultValidator, _T("ID_TEXTCTRL"));
-    MenuBar1 = new wxMenuBar();
-    Menu1 = new wxMenu();
-    MenuItem1 = new wxMenuItem(Menu1, ID_MENUITEM1, _("New Game"), wxEmptyString, wxITEM_NORMAL);
-    Menu1->Append(MenuItem1);
-    MenuBar1->Append(Menu1, _("File"));
-    SetMenuBar(MenuBar1);
 
     Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON6,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON7,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON8,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON9,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON5,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON3,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON4,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GameBoard::OnButtonClick);
-    Connect(ID_MENUITEM1,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&GameBoard::OnMenuNewGameSelected);
     //*)
 }
 

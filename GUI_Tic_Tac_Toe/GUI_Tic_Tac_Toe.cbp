@@ -84,10 +84,16 @@
 		<Unit filename="GUI_Tic_Tac_ToeApp.h" />
 		<Unit filename="GUI_Tic_Tac_ToeMain.cpp" />
 		<Unit filename="GUI_Tic_Tac_ToeMain.h" />
+		<Unit filename="GameBoard.cpp" />
+		<Unit filename="GameBoard.h" />
+		<Unit filename="Tic_Tac_Toe_logic.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Unit filename="wxsmith/GUI_Tic_Tac_Toeframe.wxs" />
+		<Unit filename="wxsmith/GameBoard.wxs" />
 		<Extensions>
 			<code_completion />
 			<envvars />
@@ -97,6 +103,7 @@
 				<gui name="wxWidgets" src="GUI_Tic_Tac_ToeApp.cpp" main="GUI_Tic_Tac_ToeFrame" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxFrame wxs="wxsmith/GUI_Tic_Tac_Toeframe.wxs" src="GUI_Tic_Tac_ToeMain.cpp" hdr="GUI_Tic_Tac_ToeMain.h" fwddecl="0" i18n="1" name="GUI_Tic_Tac_ToeFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/GameBoard.wxs" src="GameBoard.cpp" hdr="GameBoard.h" fwddecl="0" i18n="1" name="GameBoard" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>

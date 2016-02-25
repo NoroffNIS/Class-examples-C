@@ -43,8 +43,8 @@ wxString wxbuildinfo(wxbuildinfoformat format)
 }
 
 //(*IdInit(GUI_Tic_Tac_ToeFrame)
-const long GUI_Tic_Tac_ToeFrame::ID_TwoPlayer_B = wxNewId();
-const long GUI_Tic_Tac_ToeFrame::ID_COMPUTER_B = wxNewId();
+const long GUI_Tic_Tac_ToeFrame::ID_BUTTON1 = wxNewId();
+const long GUI_Tic_Tac_ToeFrame::ID_BUTTON2 = wxNewId();
 const long GUI_Tic_Tac_ToeFrame::idMenuQuit = wxNewId();
 const long GUI_Tic_Tac_ToeFrame::idMenuAbout = wxNewId();
 const long GUI_Tic_Tac_ToeFrame::ID_STATUSBAR1 = wxNewId();
@@ -65,9 +65,9 @@ GUI_Tic_Tac_ToeFrame::GUI_Tic_Tac_ToeFrame(wxWindow* parent,wxWindowID id)
     wxMenu* Menu2;
 
     Create(parent, id, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("id"));
-    SetClientSize(wxSize(562,334));
-    TwoPlayer_B = new wxButton(this, ID_TwoPlayer_B, _("Two Player"), wxPoint(104,152), wxSize(136,40), 0, wxDefaultValidator, _T("ID_TwoPlayer_B"));
-    Computer_B = new wxButton(this, ID_COMPUTER_B, _("Computer"), wxPoint(288,152), wxSize(136,40), 0, wxDefaultValidator, _T("ID_COMPUTER_B"));
+    SetClientSize(wxSize(400,223));
+    Button1 = new wxButton(this, ID_BUTTON1, _("Two Player"), wxPoint(64,40), wxSize(104,96), 0, wxDefaultValidator, _T("ID_BUTTON1"));
+    Button2 = new wxButton(this, ID_BUTTON2, _("Computer"), wxPoint(208,40), wxSize(104,96), 0, wxDefaultValidator, _T("ID_BUTTON2"));
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
     MenuItem1 = new wxMenuItem(Menu1, idMenuQuit, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
@@ -85,7 +85,7 @@ GUI_Tic_Tac_ToeFrame::GUI_Tic_Tac_ToeFrame(wxWindow* parent,wxWindowID id)
     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
     SetStatusBar(StatusBar1);
 
-    Connect(ID_TwoPlayer_B,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GUI_Tic_Tac_ToeFrame::OnTwoPlayer_BClick);
+    Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&GUI_Tic_Tac_ToeFrame::OnTwoPlayer_BClick);
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&GUI_Tic_Tac_ToeFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&GUI_Tic_Tac_ToeFrame::OnAbout);
     //*)

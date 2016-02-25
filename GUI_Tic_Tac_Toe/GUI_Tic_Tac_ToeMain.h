@@ -33,16 +33,16 @@ class GUI_Tic_Tac_ToeFrame: public wxFrame
         //*)
 
         //(*Identifiers(GUI_Tic_Tac_ToeFrame)
-        static const long ID_TwoPlayer_B;
-        static const long ID_COMPUTER_B;
+        static const long ID_BUTTON1;
+        static const long ID_BUTTON2;
         static const long idMenuQuit;
         static const long idMenuAbout;
         static const long ID_STATUSBAR1;
         //*)
 
         //(*Declarations(GUI_Tic_Tac_ToeFrame)
-        wxButton* TwoPlayer_B;
-        wxButton* Computer_B;
+        wxButton* Button1;
+        wxButton* Button2;
         wxStatusBar* StatusBar1;
         //*)
 

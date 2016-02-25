@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1455798771 source:d:\noroff\prg\code\class-examples\gui_3\gui_3app.cpp
+1456132292 source:d:\noroff\prg\code\class-examples\gui_3\gui_3app.cpp
 	"GUI_3App.h"
 	"GUI_3Main.h"
 	<wx/image.h>
 
-1455785017 d:\noroff\prg\code\class-examples\gui_3\gui_3app.h
+1456132292 d:\noroff\prg\code\class-examples\gui_3\gui_3app.h
 	<wx/app.h>
 
 1412504348 c:\wxwidgets-3.0.2\include\wx\app.h
@@ -879,7 +879,7 @@
 1412504350 c:\wxwidgets-3.0.2\include\wx\univ\theme.h
 	"wx/string.h"
 
-1455804425 d:\noroff\prg\code\class-examples\gui_3\gui_3main.h
+1456132292 d:\noroff\prg\code\class-examples\gui_3\gui_3main.h
 	<wx/stattext.h>
 	<wx/menu.h>
 	<wx/textctrl.h>
@@ -1106,7 +1106,7 @@
 
 1412504350 c:\wxwidgets-3.0.2\include\wx\msw\frame.h
 
-1385316876 source:d:\noroff\prg\code\class-examples\gui_3\resource.rc
+1456132292 source:d:\noroff\prg\code\class-examples\gui_3\resource.rc
 	"wx/msw/wx.rc"
 
 1412504350 c:\wxwidgets-3.0.2\include\wx\msw\wx.rc
@@ -1197,7 +1197,7 @@
 
 1412504350 c:\wxwidgets-3.0.2\include\wx\msw\textctrl.h
 
-1455804425 source:d:\noroff\prg\code\class-examples\gui_3\gui_3main.cpp
+1456132292 source:d:\noroff\prg\code\class-examples\gui_3\gui_3main.cpp
 	"GUI_3Main.h"
 	<wx/msgdlg.h>
 	"tic_tac_toe_game.h"
@@ -1257,7 +1257,7 @@
 
 1412504350 c:\wxwidgets-3.0.2\include\wx\msw\msgdlg.h
 
-1455796624 d:\noroff\prg\code\class-examples\gui_3\tic_tac_toe_game.h
+1456132292 d:\noroff\prg\code\class-examples\gui_3\tic_tac_toe_game.h
 	<stdio.h>
 	<stdlib.h>
 
