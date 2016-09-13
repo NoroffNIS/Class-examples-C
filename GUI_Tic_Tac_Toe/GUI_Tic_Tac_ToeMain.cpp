@@ -111,5 +111,6 @@ void GUI_Tic_Tac_ToeFrame::OnAbout(wxCommandEvent& event)
 void GUI_Tic_Tac_ToeFrame::OnTwoPlayer_BClick(wxCommandEvent& event)
 {
     GameBoard *gameboard = new GameBoard(NULL);
+    gameboard->cpu = 0;
     gameboard->Show(true);
 }

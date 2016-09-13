@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1456485444 source:d:\noroff\prg\code\class-examples\recursive\main.c
+	<stdio.h>
+	<stdlib.h>
+
